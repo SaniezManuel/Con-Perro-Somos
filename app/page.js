@@ -21,11 +21,12 @@ export default function Home() {
 
           />
           </a>
-          <ul className="text-white flex items-center font-bold space-x-20 mr-[50px]">
+          <ul className="text-white text-center flex items-center font-bold space-x-20 mr-[50px]">
               <li><a>SOBRE MI</a></li>
               <li><a>PODCAST</a></li>
               <li><a>ACADEMIA ONLINE</a></li>
               <li><a>BLOG</a></li>
+              <li><a>LOGIN</a></li>
           </ul>
       </div>
 
