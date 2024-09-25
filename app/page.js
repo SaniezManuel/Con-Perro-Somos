@@ -8,9 +8,11 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import PodcastsIcon from '@mui/icons-material/Podcasts';
 
+import perroDefault from "./resources/perroDefault.jpg"
+
 export default function Home() {
   return (
-    <main className="bg-main h-screen">
+    <main className="bg-main">
       <div className="bg-detail-dark rounded-b-[40px] max-w-fit mx-auto flex">
           <a href="#main">
           <Image
@@ -22,27 +24,23 @@ export default function Home() {
           />
           </a>
           <ul className="text-white text-center flex items-center font-bold space-x-20 mr-[50px]">
-              <li><a>SOBRE MI</a></li>
+              <li><a href="#SobreMi">SOBRE MI</a></li>
               <li><a>PODCAST</a></li>
               <li><a>ACADEMIA ONLINE</a></li>
               <li><a>BLOG</a></li>
               <li><a>LOGIN</a></li>
           </ul>
       </div>
-
-
-      <div id="main" className="flex flex-col w-[700px] mx-auto">
+      <div id="main" className="flex flex-col w-[900px] mx-auto mt-[100px]">
         <Image
         src={bigLogo}
         width={350}
         alt="LOGO"
         className="flex items-center justify-center mx-auto"
         />
-        <p className="text-white text-center text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className="text-white text-bold text-center text-[70px]">Lorem ipsum dolor sit amet</p>
 
-        <div className="flex text-white mx-auto pt-10">
+      <div className="flex text-white mx-auto pt-10">
             <a className="pr-2"><WhatsAppIcon/> 11 123456783</a>
             <p>|</p>
             <a className="pr-2 pl-2"><EmailIcon/> mail@conperrosomos.com.ar</a>
@@ -51,13 +49,31 @@ export default function Home() {
             <a><InstagramIcon/></a>
             <a><FacebookIcon/></a>
             <a><XIcon/></a>
-            <a><PodcastsIcon/></a>
+            <a><PodcastsIcon/></a> 
             </div>
-          
-
         </div>
-      </div>
+          <div id="SobreMi" className=" mt-[5300px]">
+          <h1 className="text-white text-[40px] text-bold text-center">Sobre Mi</h1>
+          <div className="grid grid-cols-2 grid-rows-1 gap-4s items-center">
+            <p className="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <Image
+            src={perroDefault}
+            width={500}
+            alt=""
+            className=""
+            />
+          </div>
 
+          </div>
+       
+        </div>
+
+     
     
   </main>
   
